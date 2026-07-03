@@ -1,3 +1,4 @@
-build
-build/bitbake-cookerdaemon.log build/cache build/conf build/downloads build/sstate-cache build/tmp
+build/*
+!build/conf/
+!build/conf/**
 bitbake-cookerdaemon.log

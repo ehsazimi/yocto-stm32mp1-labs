@@ -2,8 +2,7 @@ SUMMARY = "nInvaders recipe"
 DESCRIPTION = "Space Invaders clone"
 LICENSE = "GPL-2.0-only"
 
-# LIC_FILE_CHKSUM = "file://LICENSE;md5=b234ee4d69f5fce4486a80fdaf4a4263"
-LICENSE = "CLOSED"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 SRC_URI = "git://github.com/doctorfree/ninvaders.git;branch=main;protocol=https"
 
@@ -25,10 +24,3 @@ do_install() {
     install -m 0644 ${S}/ChangeLog ${D}${datadir}/ninvaders/
     touch ${D}${datadir}/ninvaders/highscore
 }
-
-
-
-
-
-
-

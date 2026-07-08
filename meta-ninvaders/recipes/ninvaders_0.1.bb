@@ -2,17 +2,6 @@ SUMMARY = "nInvaders recipe"
 DESCRIPTION = "Space Invaders clone"
 LICENSE = "GPL-2.0-only"
 
-
-python do_display_banner() {
-    bb.plain("**************************");
-    bb.plain("*                        *");
-    bb.plain("*  Space Invaders clone  *");
-    bb.plain("*                        *");
-    bb.plain("**************************");
-}
-
-addtask display_banner before do_build
-
 # LIC_FILE_CHKSUM = "file://LICENSE;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 LICENSE = "CLOSED"
 

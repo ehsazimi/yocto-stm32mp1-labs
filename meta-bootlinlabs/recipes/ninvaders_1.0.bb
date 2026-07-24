@@ -2,9 +2,14 @@ SUMMARY = "nInvaders recipe"
 DESCRIPTION = "Space Invaders clone"
 LICENSE = "GPL-2.0-only"
 
+FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
+
 LIC_FILES_CHKSUM = "file://LICENSE;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
-SRC_URI = "git://github.com/doctorfree/ninvaders.git;branch=main;protocol=https"
+SRC_URI = " \
+    file://joystick-support.patch \
+    git://github.com/doctorfree/ninvaders.git;branch=main;protocol=https \
+"
 
 #SRCREV = "${AUTOREV}"
 SRCREV = "dc38ab8db9ecdb5f69fbd3b3deb42e253d6f08c3"
